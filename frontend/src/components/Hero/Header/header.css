@@ -1,0 +1,65 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 4 rem;
+    width: 10rem;
+
+}
+
+.header-menu {
+
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}
+
+a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header-menu>li a:hover{
+   color: var(--orange);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        right: 2rem;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .header-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+        height: 100%;
+        width: 250px;
+        transition: right 0.3s ease;
+        z-index: 99;
+    }
+
+    .header-menu.open {
+        right: 0;
+    }
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.form-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container {
+    background-color: rgba(17, 17, 17, 0.589);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+.form-container h2 {
+    color: #F48915;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 18px;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container input::placeholder,
+.form-container select {
+    color: #ccc;
+    font-style: italic;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.form-container button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #F48915;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #ff7300;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(255, 140, 0, 0.3);
+}
+
+.form-container button:active {
+    background-color: #e67e22;
+    transform: translateY(0);
+}
+
+.form-container .footer {
+    text-align: center;
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.form-container .footer a {
+    color: #F48915;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-container .footer a:hover {
+    text-decoration: underline;
+    color: #ff7300;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+.page-blur-1{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+  }
+  .page-blur-2{
+    width: 22rem;
+    height: 30rem;
+    right: 0;
+  }

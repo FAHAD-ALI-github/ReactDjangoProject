@@ -1,0 +1,178 @@
+/* Profile Page Container */
+.profile-blur {
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.profile {
+  padding: 2rem 1.5rem ;
+  flex: 3;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.profile-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+/* Stroke Text */
+.profile-stroke-text {
+  -webkit-text-stroke: 2px #ff9800; /* Orange theme color */
+  color: transparent;
+}
+
+/* Tagline */
+.profile-tagline {
+  margin: 2rem;
+  background-color: #363d42;
+  border-radius: 3rem;
+  padding: 15px 25px;
+  text-transform: capitalize;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start ;
+  width: fit-content;
+}
+
+.profile-tagline > div {
+  position: absolute;
+  background-color: var(--orange);
+  width: 3.7rem;
+  height: 75%;
+  left: 8px;
+  border-radius: 3rem;
+  z-index: 1;
+}
+
+.profile-tagline > span {
+  z-index: 2;
+  font-size: 1.1rem; 
+}
+
+/* User's information display Section */
+.profile-info{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2rem;
+}
+.profile-figures {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.profile-figures > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-figures > div > span:nth-last-of-type(2) {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.profile-figures > div > span:nth-last-of-type(1) {
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+
+.profile-buttons {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: normal;
+  margin-top: 2rem;
+}
+
+.profile-btn-primary {
+  color: white;
+  background-color: var(--orange);
+  width: 9rem;
+}
+
+.profile-btn-secondary {
+  color: white;
+  background-color: transparent;
+  width: 9rem;
+  border: 2px solid var(--orange);
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .profile-hero-text {
+    font-size: 2rem;
+  }
+
+  .profile-figures {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .profile-figures > div > span:nth-last-of-type(2) {
+    font-size: 1rem;
+  }
+
+  .profile-figures > div > span:nth-last-of-type(1) {
+    font-size: 0.75rem;
+  }
+
+  .profile-buttons {
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  .profile-btn-primary, .profile-btn-secondary {
+    width: 8rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-hero-text {
+    font-size: 1.5rem;
+  }
+
+  .profile-tagline {
+    margin: 1rem 0;
+    padding: 8px 15px;
+  }
+
+  .profile-tagline > div {
+    width: 3rem;
+  }
+
+  .profile-figures > div > span:nth-last-of-type(2) {
+    font-size: 0.9rem;
+  }
+
+  .profile-figures > div > span:nth-last-of-type(1) {
+    font-size: 0.7rem;
+  }
+
+  .profile-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .profile-btn-primary, .profile-btn-secondary {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}

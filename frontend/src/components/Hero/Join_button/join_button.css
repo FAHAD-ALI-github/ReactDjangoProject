@@ -1,0 +1,49 @@
+
+.join_now_button {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+}
+
+.join_button {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -6px 3px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.join_button:hover {
+    background-color: #ffb429;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+.join_button:active {
+    transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+    .join_button {
+        font-size: 1rem;
+        padding: .75rem 2rem;
+    }
+}
