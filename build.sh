@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 # Install frontend dependencies
 cd frontend
-npm install
+npm install --legacy-peer-deps
 npm run build
 cd ..
 
